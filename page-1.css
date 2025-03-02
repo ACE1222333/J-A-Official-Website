@@ -1,0 +1,547 @@
+/*Notes
+/*Kung mapapansin niyo may mga "!important keyword sa ibang part
+kasi ang bootstrap may preset styling siya pag ginamit natin yung specific
+keywords sa class. Gumamit ako ng !important para maoveride yung gusto nating
+styling */
+
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Poppins' !important;
+}
+
+
+/*Navbar Part*/
+
+a, a:hover {
+    color: white !important;
+    text-decoration: none;
+}
+nav li {
+    display: inline-block;
+    margin-right: 50px;
+}
+.logo-container {
+    padding-right: 50px;
+}
+.carousel-inner img {
+    max-height: 100vh;
+    object-fit: cover; 
+    filter: brightness(50%);
+}
+.navbar {
+    background-color: transparent !important;
+    transition: background-color 0.3s ease-in-out;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding: 0 25px;
+}
+
+.navbar.scrolled {
+    background-color: white !important;
+    position: fixed;
+    opacity: 0.9;
+}
+
+.first-line.scrolled, .second-line.scrolled, .third-line.scrolled {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+}
+.three-line-container div{
+    display: none !important;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.navbar.scrolled a {
+    color: black !important;
+}
+/* --------------------------------------------------------------- */
+
+
+/*Slider image (ito yung banner for about us) */
+
+.carousel-inner {
+    max-height: 100vh; 
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 80%;
+    padding: 15px;
+
+}
+.carousel-caption h3, .carousel-caption h4 {
+    font-size: 3em;
+}
+
+.carousel-caption h3 {
+    font-family: 'Cedarville Cursive';
+    font-size: 4em;
+    font-weight: 700;;
+    opacity: 0;  
+    animation: slideInRight 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+.carousel-caption h4 {
+    font-family: 'Poppins';
+    font-size: 5em;
+    font-weight: 600;
+    opacity: 0;  
+    animation: slideInLeft 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+.carousel button {
+    font-family: 'Poppins';
+    padding: 12px 10px;
+    font-weight: 600;
+    color: white;
+    background-color: darkblue;
+    border: none;
+    margin-top: 24px;
+    animation: slideInBottom 2s ease-in-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+/* --------------------------------------------------------------- */
+
+
+/*Animation of text sa banner of about us */  
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(500%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* --------------------------------------------------------------- */
+
+
+/* flash animation pag nag change nag slide yung image sa banner */
+
+.flash-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0;
+    animation: flashEffect 1s ease-in-out;
+}
+.carousel-indicators li {
+    width: 12px;   
+    height: 12px; 
+    border-radius: 50%;
+    background-color: white; 
+    border: 2px solid #fff; 
+    opacity: 0.5; 
+    transition: opacity 0.3s ease-in-out;
+    margin-bottom: 12px;
+}
+@keyframes flashEffect {
+    0% { 
+        opacity: 0.8; 
+    }
+    50% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 0; 
+    }
+}
+/* --------------------------------------------------------------- */
+
+
+.part-4 {
+    padding: 0 25px;
+}
+
+.three-parts img{
+    border-radius: 5%;
+    height: 50%;
+}
+
+
+/* Responsive for different screen size */
+@media (max-width: 1400px) { 
+    .carousel-caption h4 { 
+        font-size: 2.5rem; }
+    .carousel-caption h3 { 
+        font-size: 1.2rem; 
+    }
+    
+    .short-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .card {
+        height: 750px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+    .card img {
+
+        height: 300px
+    }
+    .three-line-container div {
+        display: block !important;
+        
+    }
+    .three-line-container {
+        cursor: pointer;
+    }
+    .navbar ul {
+        position: absolute ;
+        top: 100px ;
+        left: 0 ;
+        background: black;
+        opacity: 1;
+        width: 100% ;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+        display: flex !important;
+        flex-shrink: 1;
+        align-items: center !important;
+        justify-content: center !important;
+
+
+        
+    }
+    .navbar ul li {
+        font-size: 12px !important;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex-direction: row !important;
+        align-items: center !important;
+
+    }
+
+    .navbar a, .navbar.scrolled a  {
+        color: white !important;
+        font-weight: 800;
+    }
+
+    
+    
+
+    .navbar {
+        display: flex !important;
+        justify-content: space-around !important;
+
+    }
+}
+
+@media (max-width: 768px) {  
+    .carousel-caption h4 { 
+        font-size: 3rem; 
+    }
+    .carousel-caption h3 { 
+        font-size: 2rem; 
+    }
+
+    .short-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .part-2 {
+        margin-top: 25px !important;
+    }
+    .card {
+        height: 100px;
+    }
+    .card p {
+        font-size: 13px;
+    }
+
+    .card img {
+        height: 300px
+    }
+    .card button {
+        margin: auto;
+    }
+
+    .gallery-header {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    .gallery-header p{
+        text-align: center !important;
+    }
+    .gallery-header button{
+        align-self: center;
+    }
+    .part-4 {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-top: 50px !important;
+    }
+    .part-4 p {
+        text-align: justify !important;
+        text-justify: inter-word;
+    }
+    .location {
+        width: 100% !important;
+        height: 50% !important;
+    }
+    .navbar ul {
+       
+        display: block !important;
+
+        
+    }
+    .navbar ul li {
+        display: block !important;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+}
+
+@media (max-width: 576px) {  
+    .carousel-caption h4 { 
+        font-size: 1.5rem; 
+    }
+    .carousel-caption h3 { 
+        font-size: 1.2rem; 
+
+    }
+    .carousel-caption button {
+        display: none;
+    }
+    .short-description h1{
+        font-size: 1.5em;
+    }
+    .short-description p {
+        font-size: 0.8em;
+        text-align: justify;
+    }
+    .carousel-indicators li {
+        width: 5px;   
+        height: 5px; 
+        border-radius: 50%;
+        background-color: white; 
+        border: 2px solid #fff; 
+        opacity: 0.5; 
+        transition: opacity 0.3s ease-in-out;
+        margin-bottom: 12px;
+    }
+    .card {
+        height: 400px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+    .card-img {
+        height: 100px;
+    }
+    .part-4 {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 50px 0 !important;
+    }
+    .part-4 p {
+        text-align: justify !important;
+        text-justify: inter-word;
+    }
+    .location {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+}
+@media (max-width: 451px) {  
+    .card {
+        height: 600px;
+    }
+    .card p {
+        font-size: 14px;
+        text-align: justify !important;
+        text-justify: inter-word;
+    }
+    .card-img {
+        height: 100px;
+    }
+
+    .gallery-section {
+        margin-top: 25px !important;
+    }
+    .gallery-header  h1 {
+        font-size: 34px !important;
+        width: 200px;
+    }
+    .gallery-header p{
+        align-self: center !important;
+        font-size: 10px !important;
+        width: 200px;
+        text-align: justify !important;
+        text-justify: inter-word;
+
+    }
+    .gallery-header button{
+        align-self: center;
+        width: 100px !important;
+        font-size: 12px;
+    }
+    .part-4 {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-top: 50px !important;
+    }
+    .part-4 p {
+        font-size: 12px !important;
+        text-align: justify !important;
+        text-justify: inter-word;
+    }
+    .location {
+        width: 100% !important;
+        height: 50% !important;
+    }
+    .navbar {
+        background-color: transparent!important;
+    }
+    iframe {
+        height: 500px !important;
+    }
+    .footer .row {
+        margin-right: 20px;
+    }
+}
+/* --------------------------------------------------------------- */
+
+/*part - 2 (ito yung 3 cards na may short description sa cafe, restaurant, and spa and residence) */
+.part-2 {
+    margin-top: 20px;
+
+}
+.card-body {
+    height: auto;
+
+}
+.card p {
+    flex-grow: 1;
+    height: 225px;
+}
+
+.card {
+    min-height: 600px;
+    border-radius: 12px;
+}
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.card button {
+    margin: auto;
+}
+.card h4 {
+    margin-top: 12px;
+}
+/* --------------------------------------------------------------- */
+
+/* Ito yung styling for images ng explore spaces */
+.image-wrapper {
+    aspect-ratio: 1/1; 
+    overflow: hidden;
+    border-radius: 12px; 
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+/* --------------------------------------------------------------- */
+
+/*style for footer */
+.footer {
+    background-color: black;
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-around;
+    height: 100%;
+    padding: 100px 0;
+
+}
+
+.footer h1 {
+    color: whitesmoke;
+    line-height: 70px;
+    font-weight: 500;
+    font-size: 54px;
+    padding-bottom: 20px;
+}
+.footer p {
+    color: white;
+    font-size: 12px;
+    line-height: 30px;
+    color: #8A8A8A;
+}
+
+.col ul {
+    list-style-type: none;
+    color: white;
+    font-weight: 300;
+}
+
+.footer .container {
+    padding: 0 25px;
+}
+
+
+/* --------------------------------------------------------------- */
+
+

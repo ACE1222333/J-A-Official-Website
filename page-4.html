@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>J&A Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="page-4.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm justify-content-center align-items-center" >
+        <div class="logo-container">
+            <img src="logo.png" width="100px">
+        </div>
+
+        <ul id="nav-items">
+            <li class="nav-item">
+                <a class="" href="page-1.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="" href="page-2.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="" href="page-3.html">CAFE</a>
+            </li>
+            <li class="nav-item">
+              <a class="" href="page-4.html">RESTAURANT</a>
+            </li>
+            <li>
+                <a href="page-5.html">SPA & RESIDENCE</a>
+            </li>
+            <li>
+                <a href="page-6.html">GALLERY</a>
+            </li>
+            <li>
+                <a href="page-7.html">TESTIMONIALS</a>
+            </li>
+            <li>
+                <a href="page-8.html">CONTACT US</a>
+            </li>
+          </ul>
+          <div class="three-line-container" onclick="menutoggle()">
+            <div class="first-line"></div>
+            <div class="second-line"></div>
+            <div class="third-line"></div> 
+          </div>
+
+        
+    </nav>
+    <section class="hero">
+        <div>
+            <h1>Welcome to Our Restaurant Section</h1>
+            <p>Relax, Sip, and Enjoy</p>
+        </div>
+    </section>
+    <div class="background-container container " style="background-color: #A3D1C6; padding: 10px; margin-top: 50px; border-radius: 12px;">
+        
+        <div class="container" style="padding: 25px;border-radius: 12px; background-color: #3D8D7A; margin-bottom: 25px; color: white;">
+            <h2  style="text-align: center; margin-bottom: 15px; font-family: impact; font-size: 54px">Welcome to our J&A Restaurant!</h2>
+            <p style="width: 300; text-align: center; font-family: 'Poppins';">
+                Welcome to J&A Restaurant, where great food meets warm hospitality. From the moment you walk through our doors, you’ll be greeted with a cozy atmosphere, 
+                friendly service, and delicious dishes made with love. Whether you’re here for a casual meal, a family gathering, or a special celebration, we strive to 
+                make every visit memorable. Sit back, relax, and enjoy the flavors of home—because at J&A Restaurant, you’re always part of the family.
+            </p>
+        </div>
+
+    </div>
+   
+
+    </div>
+    <section class="menu-container container" >
+        <div class="second-background-container container justify-content-center" style=" padding: 10px; border-radius: 12px; margin-bottom: 50px;">
+            <h2  style="padding: 10px 0;text-align: center; font-family: 'Impact'; margin-bottom: 24px; font-size: 54px; background-color:#FFF8E1; color: #493628; border-radius: 12px;">Our Menu</h2>
+            <div class="container d-flex flex-column align-items-center justify-content-center flex-md-row ">
+                <img src="restau-menu-1.jpg"  class="col-12 col-sm-12 col-md-6 col-lg-6 mr-md-3 mb-3" style=" padding: 10px 10px; border-radius: 12px;"  onclick="openLightbox(this)">
+                <img src="restau-menu-2.jpg" class="col-12 col-sm-12 col-md-6 col-lg-6" style=" padding: 10px 10px; border-radius: 12px;"  onclick="openLightbox(this)">
+            </div>
+            <div class="container d-flex flex-column align-items-center justify-content-center flex-md-row ">
+                <img src="restau-menu-3.jpg" class="col-12 col-sm-12 col-md-6 col-lg-6"style=" padding: 10px 10px; border-radius: 12px;"  onclick="openLightbox(this)">
+            </div>
+        </div>
+        <div class="container">
+            
+            <h2  style="padding: 10px 0;text-align: center; font-family: 'Impact'; margin-bottom: 24px; font-size: 54px; background-color:#FFF8E1; color: #493628; border-radius: 12px;">Original Filipino Foods </h2>
+   
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-3.png" class="card-img-top" alt="Creamy Alfredo Pasta" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">PINOY CHOPSEUY</h3>
+                            <p class="card-text">A colorful stir-fry of mixed vegetables with pork, shrimp, and quail eggs in a savory sauce.</p>
+                            <p class="food-price">₱250</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-4.png" class="card-img-top" alt="Caesar Salad" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">KRISPY BAGNET BATOK</h3>
+                            <p class="card-text"> Deep-fried pork jowl with a crispy exterior and juicy, flavorful meat.</p>
+                            <p class="food-price">₱350</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-5.png" class="card-img-top" alt="Caesar Salad" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">PAKBET </h3>
+                            <p class="card-text"> A classic vegetable dish sautéed with shrimp paste and topped with crispy bagnet.</p>
+                            <p class="food-price">₱250</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-6.png" class="card-img-top" alt="HEY GISING " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">HEY GISING </h3>
+                            <p class="card-text">Spicy sautéed tofu and ground pork, a perfect wake-up dish with bold flavors.</p>
+                            <p class="food-price">₱220</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-31.png" class="card-img-top" alt="Caesar Salad" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">TOKWA'T BAGNET</h3>
+                            <p class="card-text">Crunchy bagnet paired with fried tofu, served with a tangy soy-vinegar sauce.</p>
+                            <p class="food-price">₱300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-7.png" class="card-img-top" alt="SISIG BAGNET" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">SISIG BAGNET</h3>
+                            <p class="card-text">Crispy bagnet chopped and mixed with onions, chili, and creamy mayo.</p>
+                            <p class="food-price">₱330</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-8.png" class="card-img-top" alt="DINAKDAKAN " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">DINAKDAKAN </h3>
+                            <p class="card-text">Ilocano-style grilled pork face and liver, seasoned with calamansi, chili, and mayo.</p>
+                            <p class="food-price">₱330</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-9.png" class="card-img-top" alt="LUMPIANG SHANGHAI " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">LUMPIANG SHANGHAI </h3>
+                            <p class="card-text"> Bite-sized crispy pork spring rolls, served with a sweet and sour dip.</p>
+                            <p class="food-price">₱300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-10.png" class="card-img-top" alt="SINIGANG NA BAGNET" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">SINIGANG NA BAGNET</h3>
+                            <p class="card-text"> A rich and sour tamarind-based soup with crispy bagnet and fresh vegetables.</p>
+                            <p class="food-price">₱350</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-11.png" class="card-img-top" alt="PAN GRILL PORK BELLY/LIMEPO" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">PAN GRILL PORK BELLY/LIMEPO</h3>
+                            <p class="card-text"> Juicy, marinated pork belly grilled to perfection.</p>
+                            <p class="food-price">₱350</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-12.png" class="card-img-top" alt="BABY BACKRIBS" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">BABY BACKRIBS</h3>
+                            <p class="card-text"> Tender, slow-cooked ribs glazed with a rich barbecue sauce.</p>
+                            <p class="food-price">₱350</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2  style="padding: 10px 0;text-align: center; font-family: 'Impact'; margin-bottom: 24px; font-size: 54px; background-color: #FFF8E1; color: #493628; border-radius: 12px;">Noodles </h2>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-13.png" class="card-img-top" alt="BAGNET BAM-I" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">BAGNET BAM-I   </h3>
+                            <p class="card-text"> A Visayan-style noodle dish with egg and sotanghon noodles topped with crispy bagnet.</p>
+                            <p class="food-price">₱350</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-14.png" class="card-img-top" alt="PANCIT CANTON" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">PANCIT CANTON  </h3>
+                            <p class="card-text"> Stir-fried egg noodles with meat, seafood, and vegetables in a savory sauce.</p>
+                            <p class="food-price">₱300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-15.png" class="card-img-top" alt="PANCIT BIHON" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">PANCIT BIHON  </h3>
+                            <p class="card-text">Light and flavorful rice noodles stir-fried with meat, shrimp, and vegetables.</p>
+                            <p class="food-price">₱300</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2  style="padding: 10px 0;text-align: center; font-family: 'Impact'; margin-bottom: 24px; font-size: 54px; background-color: #FFF8E1; color: #493628; border-radius: 12px;">Seafoods </h2>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-16.png" class="card-img-top" alt="GARLIC BUTTER SHRIMP " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">GARLIC BUTTER SHRIMP </h3>
+                            <p class="card-text">Succulent shrimp cooked in a rich garlic butter sauce.</p>
+                            <p class="food-price">₱380</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-17.png" class="card-img-top" alt="SINIGANG NA HIPON " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">SINIGANG NA HIPON </h3>
+                            <p class="card-text"> A comforting shrimp soup in a tangy tamarind broth with vegetables.</p>
+                            <p class="food-price">₱380</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-18.png" class="card-img-top" alt="TEMPURA  " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">TEMPURA  </h3>
+                            <p class="card-text">Light and crispy battered shrimp, served with a special dipping sauce.</p>
+                            <p class="food-price">₱350</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-19.png" class="card-img-top" alt="SINIGANG SA MISO  " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">SINIGANG SA MISO  </h3>
+                            <p class="card-text">A unique twist on sinigang with a savory miso-infused sour broth.</p>
+                            <p class="food-price">₱380</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-20.png" class="card-img-top" alt="CALAMARI  " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">SALT AND PEPPER CALAMARI  </h3>
+                            <p class="card-text">Crispy fried squid seasoned with salt, pepper, and chili.</p>
+                            <p class="food-price">₱350</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-21.png" class="card-img-top" alt="MIXED SEAFOOD   ">
+                        <div class="card-body">
+                            <h3 class="card-title">MIXED SEAFOOD   </h3>
+                            <p class="card-text"> A delicious medley of shrimp, squid, and fish in a flavorful sauce.</p>
+                            <p class="food-price">₱350</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-22.png" class="card-img-top" alt="SWEET AND SOUR FISH FILLET  " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">SWEET AND SOUR FISH FILLET  </h3>
+                            <p class="card-text"> Crispy fish fillet tossed in a tangy sweet and sour sauce.</p>
+                            <p class="food-price">₱350</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2  style="padding: 10px 0;text-align: center; font-family: 'Impact'; margin-bottom: 24px; font-size: 54px; background-color: #FFF8E1; color: #493628; border-radius: 12px;">Chicken </h2>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-23.png" class="card-img-top" alt="GARLIC PARMESAN CHICKEN " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">GARLIC PARMESAN CHICKEN </h3>
+                            <p class="card-text">Fresh romaine lettuce with parmesan cheese and Caesar dressing.</p>
+                            <p class="food-price">₱330</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-24.png" class="card-img-top" alt="SALTED EGG CHICKEN" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">SALTED EGG CHICKEN   </h3>
+                            <p class="card-text">Fried chicken coated in a creamy salted egg sauce.</p>
+                            <p class="food-price">₱350</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-25.png" class="card-img-top" alt="CHICKEN INASAL" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">CHICKEN INASAL  </h3>
+                            <p class="card-text">Grilled chicken marinated in a special blend of vinegar, calamansi, and spices.</p>
+                            <p class="food-price">₱330</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-26.png" class="card-img-top" alt="CLASSIC FRIED CHICKEN " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">CLASSIC FRIED CHICKEN </h3>
+                            <p class="card-text"> Crispy and juicy fried chicken served with a side of gravy.</p>
+                            <p class="food-price">₱380</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2  style="padding: 10px 0;text-align: center; font-family: 'Impact'; margin-bottom: 24px; font-size: 54px; background-color: #FFF8E1; color: #493628; border-radius: 12px;">Rice Plate Meals</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-27.png" class="card-img-top" alt="FISH FILLET RICE PLATE " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">FISH FILLET RICE PLATE </h3>
+                            <p class="card-text">Crispy fish fillet served with garlic rice and a dipping sauce.</p>
+                            <p class="food-price">₱209</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-28.png" class="card-img-top" alt="PORKCHOP RICE PLATE " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">PORKCHOP RICE PLATE </h3>
+                            <p class="card-text">Juicy fried pork chop with garlic rice and a side of sauce.</p>
+                            <p class="food-price">₱209</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-29.png" class="card-img-top" alt="HERB CHICKEN RICE PLATE " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">HERB CHICKEN RICE PLATE </h3>
+                            <p class="card-text"> Herb-marinated grilled chicken with a side of rice.</p>
+                            <p class="food-price">₱209</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-29.png" class="card-img-top" alt="CORNED BEEF RICE PLATE " onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">CORNED BEEF RICE PLATE </h3>
+                            <p class="card-text"> Savory corned beef sautéed with onions, served with rice.</p>
+                            <p class="food-price">₱209</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2  style="padding: 10px 0;text-align: center; font-family: 'Impact'; margin-bottom: 24px; font-size: 54px; background-color: #FFF8E1; color: #493628; border-radius: 12px;">Soups</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-1.1.png" class="card-img-top" alt="Cheeseburger" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">TRUFFLI’N MUSHROOM SOUP </h3>
+                            <p class="card-text">Juicy beef patty with melted cheese, fresh lettuce, and tomato.</p>
+                            <p class="food-price">₱159</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card food-card shadow-sm h-100">
+                        <img src="food-2.png" class="card-img-top" alt="Pepperoni Pizza" onclick="openLightbox(this)">
+                        <div class="card-body">
+                            <h3 class="card-title">KANI CORN & EGG SOUP </h3>
+                            <p class="card-text">Classic pizza with crispy crust, loaded with pepperoni and cheese.</p>
+                            <p class="food-price">₱179</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container" style="background-color:#A3D1C6; padding: 25px; border-radius: 12px; color: white;">
+        <div class="row align-items-center">
+
+            <div class="col-12 col-md-6 mb-3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.3724516666707!2d124.29077509999999!3d12.491454300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a74de79be7cdcb%3A0x56b77f77aaca8dd7!2sMagallanes%20st%20Kinabranan%201%20Allen%20northern%20Samar!5e0!3m2!1sen!2sph!4v1740125125237!5m2!1sen!2sph" width="100%" height="300" allowfullscreen="" loading="lazy" style="border: 0; border-radius: 12px;"></iframe>
+
+            </div>
+            <div class="col-12 col-md-6" >
+                
+                <ul style="background-color: #3D8D7A; padding: 10px; border-radius: 12px; list-style: none;">
+                    <h2 style="text-align: center; font-family: 'Impact';">Venue Information: </h2>
+                    <li><strong>Business Hours: </strong>Opens at <strong>10:00 AM to 8:00PM</strong></li>
+                    <li><strong>Find us here:</strong> J&A Building Rizal Second Floor, St. Kinabranan Zone 1 6405 Allen, Philippines</li>
+                    <li><strong>Seating Capacity:</strong> Up to 20 People, airconditioned & outdoor seating.</li>
+                    <li><strong>Ambiance:</strong> Pet-friendly, Free Wi-Fi, and Ambient Lighting.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row align-items-center">
+
+            <div class="col-12 col-md-6 order-2 order-md-1" >
+                <div class="container" style="background-color:  #3D8D7A; padding: 10px; border-radius: 12px; text-align: center;">
+                    <h2 style="font-family: 'Impact';"> Other Information</h2>
+                    <p>We are located at the second floor of J&A Building Allen N. Samar on top of Goldilocks and Mercury Drug Store. </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3 order-1 order-md-2">
+                <img src="cafe-4.png" alt="" width="100%" style="border-radius: 12px;">
+
+            </div>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    
+    <footer>
+        <div class="footer" style="margin-top: 100px;">
+            <div class="container" style="">
+                <div class="row align-items-center justify-content-center" style="margin-top: 100px;">
+                    <div class="col" style="min-width: 250px; flex-basis: 12%; text-align: center;">
+                        <ul>
+                            <h3 style="color: white;">Group Members: </h3>
+                            <li>Fuellas Avi Yusef T.</li>
+                            <li>Maratas, Gabrielle Ace Lei B.</li>
+                            <li>Tahimic, Andy Briane D.</li>
+                            <li>Tan, Judd Elisha R. </li>
+                        </ul>
+                    </div>
+                    <div class="col" style="min-width: 250px; flex-basis: 12%; text-align: center;">
+                        <ul>
+                            <h3 style="color: white;">Follow Us</h3>
+                            <li><a href="https://www.facebook.com/profile.php?id=100090536258195">Facebook</a></li>
+                            <li>Instagram</li>
+                            <li>Titkok</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                    <div class="col" style="min-width: 250px; flex-basis: 12%; text-align: center;">
+                        <ul>
+                            <h3 style="color: white;">Useful Links</h3>
+                            <li><a href="page-2.html">About us</a></li>
+                            <li><a href="Contact.html">Contact us</a></li>
+                            <li>Location</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+      window.addEventListener("scroll", function() {
+          var navbar = document.querySelector(".navbar");
+          var firstLine = document.querySelector(".first-line")
+          var secondLine = document.querySelector(".second-line")
+          var thirdLine = document.querySelector(".third-line")
+          if (window.scrollY > 50) { 
+              navbar.classList.add("scrolled");
+              firstLine.classList.add("scrolled");
+              secondLine.classList.add("scrolled");
+              thirdLine.classList.add("scrolled");
+          } else {
+              navbar.classList.remove("scrolled");
+              firstLine.classList.remove("scrolled");
+              secondLine.classList.remove("scrolled");
+              thirdLine.classList.remove("scrolled");
+          }
+      });
+
+      var navItems = document.getElementById("nav-items")
+      navItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+
+          if (navItems.style.maxHeight == "0px") {
+              navItems.style.maxHeight = "400px ";
+          } else {
+              navItems.style.maxHeight = "0px";
+          }
+      }
+      function openLightbox(img) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightbox.classList.add('show');
+            lightboxImg.src = img.src;
+        }
+
+    function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('show');
+        }
+    </script>
+</body>
+</html>

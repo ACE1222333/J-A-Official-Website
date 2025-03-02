@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contacts</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="page-8.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm justify-content-center align-items-center" >
+    <div class="logo-container">
+        <img src="logo.png" width="100px">
+    </div>
+
+    <ul id="nav-items">
+        <li class="nav-item">
+            <a class="" href="page-1.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="page-2.html">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="page-3.html">CAFE</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="page-4.html">RESTAURANT</a>
+        </li>
+        <li>
+            <a href="page-5.html">SPA & RESIDENCE</a>
+        </li>
+        <li>
+            <a href="page-6.html">GALLERY</a>
+        </li>
+        <li>
+            <a href="page-7.html">TESTIMONIALS</a>
+        </li>
+        <li>
+            <a href="page-8.html">CONTACT US</a>
+        </li>
+      </ul>
+      <div class="three-line-container" onclick="menutoggle()">
+        <div class="first-line"></div>
+        <div class="second-line"></div>
+        <div class="third-line"></div> 
+      </div>
+</nav>
+<div class="container-fluid" style="margin-top: 131px;">
+    <div class="header">
+      <h1>Contact Us</h1>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Email: jafoodcourtresidences@gmail.com</p>
+        <h3>Phone Number:</h3>
+        <p>0945 439 2411</p>
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/profile.php?id=100090536258195" target="_blank">Facebook</a>
+      </div>
+    </div>
+
+  <div class="form-container">
+    <h2>Send an Email!</h2>
+    <form action="mailto:jafoodcourtresidences@gmail.com" method="post" enctype="text/plain">
+      <label for="recipient">Send to:</label>
+      <p>jafoodcourtresidences@gmail.com</p>
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" rows="4" placeholder="Your message..." required></textarea>
+      <button type="submit">Send Message</button>
+      <button type="reset" class="reset-btn">Reset</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="footer" style="margin-top: 100px;">
+      <div class="container" style="">
+          <div class="row align-items-center justify-content-center" style="margin-top: 100px;">
+              <div class="col" style="min-width: 250px; flex-basis: 12%; text-align: center;">
+                  <ul>
+                      <h3 style="color: white;">Group Members: </h3>
+                      <li>Fuellas Avi Yusef T.</li>
+                      <li>Maratas, Gabrielle Ace Lei B.</li>
+                      <li>Tahimic, Andy Briane D.</li>
+                      <li>Tan, Judd Elisha R. </li>
+                  </ul>
+              </div>
+              <div class="col" style="min-width: 250px; flex-basis: 12%; text-align: center;">
+                  <ul>
+                      <h3 style="color: white;">Follow Us</h3>
+                      <li><a href="https://www.facebook.com/profile.php?id=100090536258195">Facebook</a></li>
+                      <li>Instagram</li>
+                      <li>Titkok</li>
+                      <li>Twitter</li>
+                  </ul>
+              </div>
+              <div class="col" style="min-width: 250px; flex-basis: 12%; text-align: center;">
+                  <ul>
+                      <h3 style="color: white;">Useful Links</h3>
+                      <li><a href="page-2.html">About us</a></li>
+                      <li><a href="Contact.html">Contact us</a></li>
+                      <li>Location</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+    <script>
+      var navItems = document.getElementById("nav-items")
+      navItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+
+          if (navItems.style.maxHeight == "0px") {
+              navItems.style.maxHeight = "400px ";
+          } else {
+              navItems.style.maxHeight = "0px";
+          }
+      }
+</script>
+
+</body>
+</html>
